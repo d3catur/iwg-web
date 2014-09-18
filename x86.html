@@ -4,15 +4,15 @@
   <meta charset="utf-8" />
   
   <!--[if lt IE 9]>
-  <script src="lib/html5shim.js"></script>
+  <script src="/lib/html5shim.js"></script>
   <![endif]-->  
   
   <!-- These are some core styles the slideshow app requires -->
-  <link rel="stylesheet" href="lib/styles.css" />
+  <link rel="stylesheet" href="/lib/styles.css" />
   
   <!-- These are the styles you'll add to make the slides look great -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/prism.css" />
   
   <title>x86 Assembly Language</title>
 </head>
@@ -320,7 +320,7 @@ _start:
             <li>Subtracting to esp adds items to the stack</li></ul>
         </li>
       </ul></div>
-      <img style="float:left;padding-left:10em" src="images/stack_overview.svg" />
+      <img style="float:left;padding-left:10em" src="/images/stack_overview.svg" />
       <div style="clear:both"></div>
     </section>
     <section>
@@ -341,7 +341,7 @@ _start:
         <li>After return, caller responsible for cleaning arguments off the stack</li>
       </ul>
       </div>
-      <img style="float:left" src="images/stack_frame.svg" />
+      <img style="float:left" src="/images/stack_frame.svg" />
       <div style="clear:both"></div>
     </section>
     <section>
@@ -630,27 +630,14 @@ int 80h            ; perform system call
     </section>
   </div>
   <!-- /deck -->
-  <script src="lib/jquery-1.5.2.min.js"></script>
-  <script src="lib/jquery.jswipe-0.1.2.js"></script>  
-  <script src="lib/htmlSlides.js"></script>
-  <script src="lib/prism.js"></script>
-  <script src="lib/trim.js"></script>
+  <script src="/lib/jquery-1.5.2.min.js"></script>
+  <script src="/lib/jquery.jswipe-0.1.2.js"></script>  
+  <script src="/lib/htmlSlides.js"></script>
+  <script src="/lib/prism.js"></script>
+  <script src="/lib/trim.js"></script>
   <script>
     //Do our business when the DOM is ready for us
     $(function() {
-      
-      //You can trigger Javascript based on the slide number like this:
-      $('html').bind('newSlide', function(e, id) { 
-        switch(id) {
-          case 2:
-            console.log('This is the second slide.');;
-            break;
-          case 3:
-            console.log('Hello, third slide.');
-            break;
-        }
-      });
-
       //One little option: hideToolbar (boolean; default = false)
       htmlSlides.init({ hideToolbar: true });
       

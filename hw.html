@@ -4,15 +4,15 @@
   <meta charset="utf-8" />
   
   <!--[if lt IE 9]>
-  <script src="lib/html5shim.js"></script>
+  <script src="/lib/html5shim.js"></script>
   <![endif]-->  
   
   <!-- These are some core styles the slideshow app requires -->
-  <link rel="stylesheet" href="lib/styles.css" />
+  <link rel="stylesheet" href="/lib/styles.css" />
   
   <!-- These are the styles you'll add to make the slides look great -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/prism.css" />
   
   <title>x86 Assembly Language</title>
 </head>
@@ -47,7 +47,7 @@
           <li>Similarly, the top of the stack is at the bottom of the diagram</li>
         </ul>
       </div>
-      <img style="float:left;margin-left:10em" src="images/stack_overview.svg" />
+      <img style="float:left;margin-left:10em" src="/images/stack_overview.svg" />
       <div style="clear:both"></div>
     </section>
     <section>
@@ -169,7 +169,7 @@ main:
             the caller expects ebp to be preserved</li>
         </ul>
       </div>
-      <img style="float:left;margin-left:10em" src="images/push_ebp.svg" />
+      <img style="float:left;margin-left:10em" src="/images/push_ebp.svg" />
       <div style="clear:both"></div>
     </section>
     <section>
@@ -185,7 +185,7 @@ main:
             <li>In this way, ebp forms a sort of linked-list</li>
         </ul>
       </div>
-      <img style="float:left;margin-left:10em" src="images/mov_ebp_esp.svg" />
+      <img style="float:left;margin-left:10em" src="/images/mov_ebp_esp.svg" />
       <div style="clear:both"></div>
     </section>
     <section>
@@ -200,7 +200,7 @@ main:
             <li>We are pushing this onto the stack to use as an argument</li>
         </ul>
       </div>
-      <img style="float:left;margin-left:10em" src="images/push_msg.svg" />
+      <img style="float:left;margin-left:10em" src="/images/push_msg.svg" />
       <div style="clear:both"></div>
     </section>
     <section>
@@ -216,7 +216,7 @@ main:
             <li>Recall: return value will be in eax</li>
         </ul>
       </div>
-      <img style="float:left;margin-left:10em" src="images/push_msg.svg" />
+      <img style="float:left;margin-left:10em" src="/images/push_msg.svg" />
       <div style="clear:both"></div>
     </section>
     <section>
@@ -233,7 +233,7 @@ main:
             <li>Recall: adding 4 to esp effectively removes one item from the stack</li>
         </ul>
       </div>
-      <img style="float:left;margin-left:10em" src="images/mov_ebp_esp.svg" />
+      <img style="float:left;margin-left:10em" src="/images/mov_ebp_esp.svg" />
       <div style="clear:both"></div>
     </section>
     <section>
@@ -246,7 +246,7 @@ main:
             <li>Necessary because we don't know what printf() will put there</li>
         </ul>
       </div>
-      <img style="float:left;margin-left:10em" src="images/mov_ebp_esp.svg" />
+      <img style="float:left;margin-left:10em" src="/images/mov_ebp_esp.svg" />
       <div style="clear:both"></div>
     </section>
     <section>
@@ -260,7 +260,7 @@ main:
             <li>Since we have not allocated any stack space - doesn't do anything</li>
         </ul>
       </div>
-      <img style="float:left;margin-left:10em" src="images/mov_ebp_esp.svg" />
+      <img style="float:left;margin-left:10em" src="/images/mov_ebp_esp.svg" />
       <div style="clear:both"></div>
     </section>
     <section>
@@ -274,7 +274,7 @@ main:
             <li>Sets up the stack frame for a return</li>
         </ul>
       </div>
-      <img style="float:left;margin-left:10em" src="images/pop_ebp.svg" />
+      <img style="float:left;margin-left:10em" src="/images/pop_ebp.svg" />
       <div style="clear:both"></div>
     </section>
     <section>
@@ -288,16 +288,16 @@ main:
             <li>main(): returns to startup code that calls exit()</li>
         </ul>
       </div>
-      <img style="float:left;margin-left:10em" src="images/ret.svg" />
+      <img style="float:left;margin-left:10em" src="/images/ret.svg" />
       <div style="clear:both"></div>
     </section>
   </div>
   <!-- /deck -->
-  <script src="lib/jquery-1.5.2.min.js"></script>
-  <script src="lib/jquery.jswipe-0.1.2.js"></script>  
-  <script src="lib/htmlSlides.js"></script>
-  <script src="lib/prism.js"></script>
-  <script src="lib/trim.js"></script>
+  <script src="/lib/jquery-1.5.2.min.js"></script>
+  <script src="/lib/jquery.jswipe-0.1.2.js"></script>  
+  <script src="/lib/htmlSlides.js"></script>
+  <script src="/lib/prism.js"></script>
+  <script src="/lib/trim.js"></script>
   <script>
     //Do our business when the DOM is ready for us
     $(function() {
